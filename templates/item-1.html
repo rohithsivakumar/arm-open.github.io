@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="../static/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="../static/css/style.css"> <!-- Resource style -->
+	<script src="../static/js/modernizr.js"></script> <!-- Modernizr -->
 
 	<title>ARM | Archangel Raphael's mission </title>
 </head>
@@ -16,6 +16,8 @@
     <div class="cd-fold-content single-page">
 
     <img src="../static/img/Our_Mission_Header.jpg" class="our-mission-header-img">
+
+    {% block content %}{% endblock %}
 
       <section class="fold-section-padding">
 
@@ -36,7 +38,7 @@
       </section>
 	</div>
 </body>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="../static/js/jquery-2.1.1.js"></script>
+	<script src="../static/js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

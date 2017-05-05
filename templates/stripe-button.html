@@ -1,0 +1,26 @@
+{% extends "item-1.html" %}
+{% block content %}
+  <form action="/charge" method="post">
+    <!--
+    <article>
+      <label>
+        <span>Amount is $5.00</span>
+      </label>
+    </article>
+  -->
+
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="{{publishable_key}}"
+            data-description="armnewbrunswick.org"
+            data-name="ARM New Brunswick"
+            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+            data-amount="100"
+            data-locale="auto"
+            data-panel-label="Donate"
+            data-zip-code="true"
+            data-label="Donate"
+            data-allow-remember-me="false"
+            data-bitcoin="true"
+            ></script>
+  </form>
+{% endblock %}
