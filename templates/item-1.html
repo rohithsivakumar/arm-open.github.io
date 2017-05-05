@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="../static/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="../static/css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 	<title>ARM | Archangel Raphael's mission </title>
@@ -31,12 +31,22 @@
 		<p> We are professionals, students, millennials, baby boomers, Muslims, Christians, graphic designers, pharmacists, immigrants, children, Egyptians, and Puerto Ricans.
 		</p>
 
-        <a href="http://bit.ly/join_arm_mission" target='_blank'><b class="link-button">Join Us</b></a>
+        <form action="/payment" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" 
+                class="stripe-button"
+                data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                data-description="A donation to ARM New Brunswick"
+                data-name="armnewbrunswick.org"
+                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                data-amount="25000"></script>
+    </form>
+    <a href="http://bit.ly/join_arm_mission" target='_blank'><b class="link-button">Join Us</b></a>
 
       </section>
 	</div>
 </body>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="../static/js/jquery-2.1.1.js"></script>
+<script src="../static/js/main.js"></script> <!-- Resource jQuery -->
+<script src="https://checkout.stripe.com/checkout.js"></script>
 </body>
 </html>
