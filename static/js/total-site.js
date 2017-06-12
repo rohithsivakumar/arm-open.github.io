@@ -34,6 +34,7 @@ $(document).ready(function() {
         console.log("handler configured");
 
         $('#stripe-button').on('click', function(e) {
+          console.log("button clicked");
             // Open Checkout with further options
             handler.open({
                 name: 'ARM New Brunswick',
